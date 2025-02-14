@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #f39188;
+    text-align: center;
+}
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background: #f2d0d0;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 10px 35px;
+    margin: 0 15px;
+    font-size: 1.5em;
+    color: #685959;
+    box-shadow: 13px 15px 50px 0px #6561614e;
+}
+p{
+    color: #f2d0d0;
+    font-size: 1.7em;
+    margin: 20px 0;
+}
+img{
+    width: 60%;
+}
+.image2{
+    width: 100%;
+}
+.lyrics-container {
+    display: none;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.lyrics {
+    position: absolute;
+    top: 85%;
+    transform: translateY(-50%);
+    width: 100%;
+    /* text-align: center;
+    animation: scrollLyrics 20s linear infinite; */
+}
+
+.lyrics p {
+    margin: 10px 0;
+    opacity: 0; /* Texte transparent par défaut */
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.lyrics p.active {
+    opacity: 1; /* Texte visible pour le paragraphe actif */
+}
+
+/* @keyframes scrollLyrics {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -100%;
+    }
+} */
